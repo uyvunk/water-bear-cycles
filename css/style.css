@@ -13,10 +13,19 @@
 	line-height: normal;
 	font-weight: normal;
 }
-body {
-	background-color: #000000;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
+
+.blue-background {
+	background-color: #98dafc;
+}
+
+.blue-text {
+	color: #98dafc;
+}
+
+.white-background {
+	background-color: #ffffff;
+}
+
+.white-text {
+	color: #ffffff;
 }

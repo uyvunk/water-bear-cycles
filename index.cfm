@@ -1,20 +1,29 @@
 <html>
 <head>
-<meta charset="utf-8">
-<title>WaterBearCycles Trading</title>
-<style type="text/css">
-body {
-	background-color: #000000;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-</style>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <title>WaterBearCycles Trading</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="blue-background">
+<div><cfinclude template="topnav.cfm"></div>
+<div class="row">
+  <div class="col-sm-4"><a class="btn btn-default" href="sales.cfm?type=1">Cosign Now</a></div>
+  <div class="col-sm-4"><a class="btn btn-default" href="sales.cfm">Get Cash Now</a></div>
+  <div class="col-sm-4">
+    <h1>Quick Cash for Bicycles &amp; Bicycle Components</h1>
+    <p>
+    Simply Fill Out Either Form to the Left or Click on the Contact Us Tab at the Top of This Page
+    </p>
+    <img src="images/blackbike.jpg" alt="Water Bear Cycles Trading">
+  </div>
+</div>
+<!--
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
@@ -61,5 +70,6 @@ body {
     </tr>
   </tbody>
 </table>
+-->
 </body>
 </html>
