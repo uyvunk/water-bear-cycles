@@ -1,4 +1,4 @@
-<nav class="navbar blue-background">
+<nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-left" href="index.cfm"><img src="images/logo.png" alt="Water Bear Cycles Trading"></a>

@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8";
 .maintitle {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -28,4 +28,8 @@
 
 .white-text {
 	color: #ffffff;
+} */
+@charset "utf-8";
+.container {
+	padding: 80px 120px;
 }

@@ -12,17 +12,12 @@
 
 <body class="blue-background">
 <div><cfinclude template="topnav.cfm"></div>
-<div class="row">
-  <div class="col-sm-4"><a class="btn btn-default" href="sales.cfm?type=1">Cosign Now</a></div>
-  <div class="col-sm-4"><a class="btn btn-default" href="sales.cfm">Get Cash Now</a></div>
-  <div class="col-sm-4">
+<div><cfinclude template="carousel.cfm"></div>
+<div class="container text-center">
     <h1>Quick Cash for Bicycles &amp; Bicycle Components</h1>
-    <p>
-    Simply Fill Out Either Form to the Left or Click on the Contact Us Tab at the Top of This Page
-    </p>
-    <img src="images/blackbike.jpg" alt="Water Bear Cycles Trading">
-  </div>
+    <p>Please click on Get Cash button below or Contact us.</p>
 </div>
+<div><cfinclude template="footer.cfm"></div>
 <!--
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tbody>
