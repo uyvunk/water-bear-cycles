@@ -1,42 +1,52 @@
-/* @charset "utf-8";
-.maintitle {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: bold;
-}
-.bodytext {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: normal;
-}
-
-.blue-background {
-	background-color: #98dafc;
-}
-
-.blue-text {
-	color: #98dafc;
-}
-
-.white-background {
-	background-color: #ffffff;
-}
-
-.white-text {
-	color: #ffffff;
-} */
 @charset "utf-8";
+
+/* General Styling */
 .container {
 	padding: 80px 120px;
 }
 
+/* Brand Logo */
 #brandLogo {
-    position: relative;
-    float: left;
-    padding: 0px;
+  position: relative;
+  float: left;
+  padding: 0px;
 	height: 50px;
 }
+
+/* Navigation Bar */
+
+/* Carousel */
+#myCarousel {
+	margin-top: 80px;
+}
+
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+
+/* Footer */
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	opacity:0.9;
+ }
+
+ .footer div a img {
+   height: 30px;
+ }

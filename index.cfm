@@ -17,6 +17,10 @@
     <h1>Quick Cash for Bicycles &amp; Bicycle Components</h1>
     <p>Please click on Get Cash button below or Contact us.</p>
 </div>
+
+<div class="container text-center">
+    <cfinclude  template="sales.cfm">
+</div>
 <div><cfinclude template="footer.cfm"></div>
 </body>
 </html>

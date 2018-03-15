@@ -9,21 +9,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/carousel2.jpg" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel1.jpg" alt="Trade your used bicycle">
       <div class="carousel-caption">
         <h3>Trade your used bicycle</h3>
       </div> 
     </div>
 
     <div class="item">
-      <img src="images/carousel3.jpg" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel2.jpg" alt="Trade your used bicycle">
       <div class="carousel-caption">
         <h3>Trade your used bicycle</h3>
       </div> 
     </div>
 
     <div class="item">
-      <img src="images/carousel4.jpg" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel3.jpg" alt="Trade your used bicycle">
       <div class="carousel-caption">
         <h3>Trade your used bicycle</h3>
       </div> 
