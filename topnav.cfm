@@ -11,10 +11,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li  class="active"><a href="index.cfm">Home</a></li>
-        <li><a href="howitworks.cfm">How it works</a></li>
-        <li><a href="about.cfm">About</a></li>
-        <li><a href="contact.cfm">Contact Us</a></li>
-        <li><a href="shipping.cfm">Bicycle Packing &amp; Shipping Services</a></li>
+        <li><a href="#howitworks">How it works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#shipping">Bicycle Packing &amp; Shipping Services</a></li>
         <li><a href="consignmentfees.cfm">Cosignment Fee</a></li>
       </ul>
     </div>

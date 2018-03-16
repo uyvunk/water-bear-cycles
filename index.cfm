@@ -17,9 +17,17 @@
     <h1>Quick Cash for Bicycles &amp; Bicycle Components</h1>
     <p>Please click on Get Cash button below or Contact us.</p>
 </div>
-
-<div class="container text-center">
-    <cfinclude  template="sales.cfm">
+<div id="howitworks" class="container"> 
+  <cfinclude  template="howitworks.cfm">
+</div>
+<div id ="contact" class="container text-center">
+  <cfinclude template="contact.cfm">
+</div>
+<div id="shipping" class="container">
+  <cfinclude template="shipping.cfm">
+</div>
+<div id ="about" class="container">
+  <cfinclude  template="about.cfm">
 </div>
 <div><cfinclude template="footer.cfm"></div>
 </body>
