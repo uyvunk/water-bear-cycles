@@ -16,7 +16,7 @@
 /* Navigation Bar */
 
 /* Carousel */
-#myCarousel {
+.myCarousel {
 	margin-top: 80px;
 }
 
@@ -35,6 +35,10 @@
     .carousel-caption {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
+}
+
+.carousel_iframe {
+  width: 100%;
 }
 
 /* Footer */
