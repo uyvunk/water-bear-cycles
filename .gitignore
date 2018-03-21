@@ -2,3 +2,5 @@ aspnet_client/
 cf_scripts/
 CFIDE/
 WEB-INF/
+*.xml
+uploads/
