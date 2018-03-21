@@ -10,18 +10,19 @@
   position: relative;
   float: left;
   padding: 0px;
-	height: 50px;
+  height: 50px;
 }
 
 /* Navigation Bar */
 .navbar {
     margin-bottom: 0;
-    background-color: #1da1f2;
+    /* background-color: #1da1f2; */
     z-index: 9999;
     border: 0;
     font-size: 13px !important;
     border-radius: 0;
     border-color: transparent !important;
+    background-color:#0047ab;
 }
 
 .navbar li a, .navbar .navbar-brand {
@@ -36,7 +37,7 @@
 .navbar-nav li a:hover, .navbar-nav li.active a {
     /* color: #1da1f2 !important; */
     background-color: #fff !important;
-    color:#f4511e!important;
+    color:#0047ab!important;
 }
 
 .navbar-default .navbar-collapse {
@@ -51,7 +52,7 @@
 .navbar-default {
     /* background-color: #1da1f2 !important; */
     border-color: transparent !important;
-    background-color:#f4511e!important;
+    background-color:#0047ab!important;
 }
 
 /* Carousel */
@@ -101,8 +102,8 @@
     border-radius: 0 !important;
  } */
  .btn-default {
-    background-color:#f4511e!important;
-    border-color:#f4511e !important;
+    background-color:#0047ab!important;
+    border-color:#0047ab !important;
     color: #fff !important;
     border-radius: 0 !important;
  }

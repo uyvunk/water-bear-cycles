@@ -16,7 +16,7 @@
   <div><cfinclude template="topnav.cfm"></div>
   <div><cfinclude template="carousel.cfm"></div>
   <div class="container text-center">
-      <h1>Quick Cash for Bicycles &amp; Bicycle Components</h1>
+      <h1>Cash for Bicycles &amp; Bicycle Components</h1>
       <p>Please click on Get Cash button below or Contact us.</p>
   </div>
 
@@ -34,6 +34,15 @@
 
   <div id="shipping" class="container text-center">
     <cfinclude template="shipping.cfm">
+  </div>
+
+  <div id="consignmentfees" class="container">
+    <cfinclude  template="consignmentfees.cfm">
+  </div>
+  
+  <div class="container text-center">
+  <p>Copyright &copy; 2018 WaterBear Cycles Trading</p>
+  <cfinclude  template="disclaimer.cfm">
   </div>
 
   <div><cfinclude template="footer.cfm"></div>

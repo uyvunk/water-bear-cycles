@@ -15,7 +15,7 @@
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#contact">CONTACT US</a></li>
         <li><a href="#shipping">BICYCLE PACKING &amp; SHIPPING SERVICES</a></li>
-        <li><a href="consignmentfees.cfm">COSIGNMENT FEE</a></li>
+        <li><a href="#consignmentfees">COSIGNMENT FEE</a></li>
       </ul>
     </div>
   </div>
