@@ -2,7 +2,7 @@
 
 /* General Styling */
 .container {
-	padding: 80px 120px;
+	padding: 40px;
 }
 
 /* Brand Logo */
@@ -10,14 +10,54 @@
   position: relative;
   float: left;
   padding: 0px;
-	height: 50px;
+  height: 50px;
 }
 
 /* Navigation Bar */
+.navbar {
+    margin-bottom: 0;
+    /* background-color: #1da1f2; */
+    z-index: 9999;
+    border: 0;
+    font-size: 13px !important;
+    border-radius: 0;
+    border-color: transparent !important;
+    background-color:#0047ab;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-header {
+    border: 0;
+    border-color: transparent !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    /* color: #1da1f2 !important; */
+    background-color: #fff !important;
+    color:#0047ab!important;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent !important;
+    color: #fff !important;
+}
+
+.navbar-default {
+    /* background-color: #1da1f2 !important; */
+    border-color: transparent !important;
+    background-color:#0047ab!important;
+}
 
 /* Carousel */
 .myCarousel {
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .carousel-inner img {
@@ -48,9 +88,39 @@
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	opacity:0.9;
+    	opacity:0.8;
  }
 
  .footer div a img {
    height: 30px;
  }
+
+ /* .btn-default {
+    background-color: #1da1f2 !important;
+    border-color: #1da1f2 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+ } */
+ .btn-default {
+    background-color:#0047ab!important;
+    border-color:#0047ab !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+ }
+
+ /* Thumbnail */
+ 
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+    padding: 15px 5px;
+    border-radius: 0;
+    height: 420px;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+body {
+    font-family: Lato, sans-serif !important;
+}
