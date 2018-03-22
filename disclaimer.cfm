@@ -1,6 +1,7 @@
-<div class="container">
+<div class="container text-center">
+<p>Copyright &copy; 2018 WaterBear Cycles Trading</p><br>
     <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Disclaimer</button>
+  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Disclaimer</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">

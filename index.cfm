@@ -9,10 +9,13 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
   <div><cfinclude template="topnav.cfm"></div>
   <div><cfinclude template="carousel.cfm"></div>
   <div class="container text-center">
@@ -41,7 +44,6 @@
   </div>
   
   <div class="container text-center">
-  <p>Copyright &copy; 2018 WaterBear Cycles Trading</p>
   <cfinclude  template="disclaimer.cfm">
   </div>
 
