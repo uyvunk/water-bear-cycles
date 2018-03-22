@@ -1,7 +1,6 @@
-<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
+<nav id="navBar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="100">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
