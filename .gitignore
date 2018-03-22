@@ -4,3 +4,5 @@ CFIDE/
 WEB-INF/
 *.xml
 uploads/
+.vscode/
+application.cfm

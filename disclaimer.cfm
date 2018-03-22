@@ -1,6 +1,5 @@
-<div class="container text-center">
-<p>Copyright &copy; 2018 WaterBear Cycles Trading</p><br>
-    <!-- Trigger the modal with a button -->
+<div id="disclaimer">
+  <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Disclaimer</button>
 
   <!-- Modal -->

@@ -158,230 +158,131 @@
 		<cfset condition = 0>
 		<cfset notes = "">
 		<cfset imageList = "">
-	</cfif>		
+	</cfif>
 </cfif>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta charset="utf-8">
-<title>WaterBearCycles Trading</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Sell you used bicycle | WaterBearCycles Trading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form name="form1" id="form1" action="sales.cfm" method="post" enctype="multipart/form-data">
-	<input type="hidden" name="imageList" value="<cfoutput>#imageList#</cfoutput>">
-<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td>&nbsp;</td>
-    <td width="980"><cfinclude template="topnav.cfm"></td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td width="980" bgcolor="#FFFFFF"><cfoutput>
-      <table cellpadding="0" cellspacing="0" class="bodytext" width="50%" border="0">
-        <tr>
-          <td align="center"><table cellpadding="0" cellspacing="0" width="90%" align="center" class="bodytext" border="0">
-              <tr>
-                <th width="2%">     
-                <th width="23%">     
-                <th width="73%">     
-                <th width="2%">     
-              </tr>
-			  <cfset i = 0>
-			  <cfloop list="#errors#" index="e" delimiters=";">
-				<tr>
-					<td>&nbsp;</td>
-					<td align="right"><cfif i eq 0><font size="2" face="Verdana, Arial, Helvetica, sans-serif" style="Color:Red">Errors: </font><cfelse>&nbsp;</cfif></td>
-					<td align="left" colspan="2"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" style="Color:Red">&nbsp;&nbsp;#e#</font></td>
-				</tr>
-				<cfset i +=1>
-			  </cfloop>
-			  <cfif success>
-			  	<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-			  	<tr>
-					<td colspan="4"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" style="Color:Green"><b>Submission successful. <br>Your estimate should be returned within 48 hours. <br>Thank you.</font></b></td>
-				</tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-				<tr><td colspan="4">&nbsp;</td></tr>
-			  <cfelse>
-				  <tr>
-					<td colspan="4" align="center">&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Type:</font></td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;
-						  <input type="radio" name="type" value="0" <cfif type eq 0>checked="checked"</cfif> />
-					  &nbsp; Get Cash</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right">&nbsp;</td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;
-						  <input type="radio" name="type" value="1" <cfif type eq 1>checked="checked"</cfif>/>
-					  &nbsp; Consign</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr><td colspan="4"><hr /></td></tr>			  		
-				  <tr>
-					<td colspan="4"><b>Contact Information</b></td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Name:<span style="Color:Red;">*</span></font></td>
-					<td align="left">&nbsp;&nbsp;<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
-						<input type="text" name="name" size="20" value="#name#" /></font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Phone:<span style="Color:Red;">*</span></font></td>
-					<td align="left">&nbsp;&nbsp;<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
-						<input type="text" name="phone" size="20" value="#phone#" /></font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Email:<span style="Color:Red;">*</span></font></td>
-					<td align="left">&nbsp;&nbsp;<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
-						<input type="text" name="email" size="20" value="#email#" /></font></td>
-					<td>&nbsp;</td>
-				  </tr>	
-				  <tr><td colspan="4"><hr /></td></tr>			  		
-				  <tr>
-					<td colspan="4"><b>Bicycle Information</b></td>
-				  </tr>			  		  			  			  
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Make:</font></td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;
-						  <input type="text" name="make" size="20" value="#make#" />
-					</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Model:</font></td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;
-						  <input type="text" name="model" size="20" value="#model#" />
-					</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Year:</font></td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;
-						  <cfset yr = year(now()) + 1>
-						  <select name="year">
-							<option value="0" selected>-Select Year-</option>
-							<cfloop condition="yr gte 1998">
-							  <option value="#yr#" <cfif yr eq year> selected="selected"</cfif>>#yr#</option>
-							  <cfset yr = yr - 1>
-							</cfloop>
-						  </select>
-					</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Condition:</font></td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;
-						  <input type="radio" name="condition" value="0" <cfif condition eq 0>checked="checked"</cfif> />
-					  &nbsp; Excellent</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right">&nbsp;</td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;
-						  <input type="radio" name="condition" value="1" <cfif condition eq 1>checked="checked"</cfif>/>
-					  &nbsp; Good</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right">&nbsp;</td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;
-						  <input type="radio" name="condition" value="2" <cfif condition eq 2>checked="checked"</cfif>/>
-					  &nbsp; Fair</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td colspan="4">&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right">&nbsp;</td>
-					<td align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Desciption, Approx. miles, Specs</font></td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td>&nbsp;</td>
-					<td align="right">&nbsp;</td>
-					<td><textarea name="notes" rows="5" cols="32" id="notes">#notes#</textarea>
-					</td>
-					<td>&nbsp;</td>
-				  </tr>
-				  <tr><td colspan="4"><hr /></td></tr>			  		
-				  <tr>
-					<td colspan="4"><b>Image Uploads <br>(Optional. You can upload up to 3 images.)</b></td>
-				  </tr>	
-				<tr>
-					<td>&nbsp;</td>
-					<td align="left" style="vertical-align:top;" class="fontBold">Image:</td>
-					<td align="left" class="font"><input type="file" name="inputImage" size="20"/>&nbsp;&nbsp;<input name="uploadImage" type="submit" value="Upload"></td>
-					<td>&nbsp;</td>								
-				</tr>
-				<cfloop list="#imageList#" delimiters=";" index="listItem">
-					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>#listItem#</td>
-						<td>&nbsp;</td>
-					</tr>
+	<div class="header">
+		<a href="#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
+	</div>
+	<nav id="navBar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="100">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="./#myPage">HOME</a></li>
+					<li><a href="./#howitworks">HOW IT WORKS</a></li>
+					<li><a href="./#about">ABOUT</a></li>
+					<li><a href="./#contact">CONTACT US</a></li>
+					<li><a href="./#shipping">BICYCLE PACKING &amp; SHIPPING SERVICES</a></li>
+					<li><a href="./#consignmentfees">COSIGNMENT FEE</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<form name="form1" id="form1" action="sales.cfm" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="imageList" value="<cfoutput>#imageList#</cfoutput>">
+			<cfoutput>
+				<cfset i = 0>
+				<cfloop list="#errors#" index="e" delimiters=";">
+					<div class="alert alert-danger">
+						<strong>Errors:</strong>#e#
+					</div>
+					<cfset i +=1>
 				</cfloop>
-				  <tr><td colspan="4"><hr /></td></tr>	
-				  <tr>
-					<td colspan="4" align="center">&nbsp;</td>
-				  </tr>
-				  <tr>
-					<td colspan="4" align="center"><input type="submit" name="btnSubmit" value="Submit"></td>
-				  </tr>
-				  <tr>
-					<td colspan="4" align="center">&nbsp;</td>
-				  </tr>
-			</cfif>
-          </table></td>
-        </tr>
-      </table>
-    </cfoutput></td>
-            <td valign="top"><p>&nbsp;</p></td>
-          </tr>
-        </tbody>
-      </table>
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td>&nbsp;</td>
-      <td width="980"><img src="images/bottomofsite04.jpg" width="980" height="300" alt=""/></td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td height="40">&nbsp;</td>
-      <td width="980" height="40" align="center"><strong><font color="#CCCCCC" size="1" face="Verdana, Arial, Helvetica, sans-serif">Copyright &copy; 2016 WaterBear Cycles Trading</font></strong><BR>
-      <a href="disclaimer.cfm"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFCC33" size="2"><strong>DISCLAIMER</strong></font></a></td>
-      <td height="40">&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
+				<cfif success>
+					<div class="alert alert-success">
+						<strong>Submission successful.</strong>
+						<br>Your estimate should be returned within 48 hours.
+						<br>Thank you.
+					</div>
+				<cfelse>
+					<h3>Type</h3>
+					<div class="checkbox">
+						<label><input type="radio" name="type" value="0" <cfif type eq 0>checked</cfif>> Get Cash</label>
+					</div>
+					<div class="checkbox">
+						<label><input type="radio" name="type" value="1" <cfif type eq 1>checked="checked"</cfif>> Consign</label>
+					</div>
+					<h3>Contact Information</h3>
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" name="name" size="20" class="form-control" value="#name#" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone:</label>
+						<input type="text" name="phone" class="form-control" size="20" value="#phone#" placeholder="Enter phone number">
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" name="email" size="20" class="form-control" value="#email#" placeholder="Enter email">
+					</div>
+
+					<h3>Bicycle Information</h3>
+					<div class="form-group">
+						<label for="make">Make:</label>
+						<input type="text" name="make" size="20" class="form-control" value="#make#" placeholder="Enter make">
+					</div>
+					<div class="form-group">
+						<label for="model">Model:</label>
+						<input type="text" name="model" size="20" class="form-control" value="#model#" placeholder="Enter model">
+					</div>
+					<div class="form-group">
+						<label for="year">Year:</label>
+						<cfset yr = year(now()) + 1>
+						  <select name="year">
+								<option value="0" selected>-Select Year-</option>
+								<cfloop condition="yr gte 1998">
+									<option value="#yr#" <cfif yr eq year> selected="selected"</cfif>>#yr#</option>
+									<cfset yr = yr - 1>
+								</cfloop>
+						  </select>
+					</div>
+					<div class="form-group">
+						<label for="condition">Condition:</label><br>
+						<input type="radio" name="condition" value="0" <cfif condition eq 0>checked="checked"</cfif> /> Excellent<br>
+						<input type="radio" name="condition" value="1" <cfif condition eq 1>checked="checked"</cfif> /> Good<br>
+						<input type="radio" name="condition" value="2" <cfif condition eq 2>checked="checked"</cfif> /> Fair<br>
+					</div>
+					<div class="form-group">
+						<label for="notes">Desciption, Approx. miles, Specs:</label>
+						<textarea class="form-control" name="notes" rows="5" cols="32" id="notes">#notes#</textarea>
+					</div>
+					<h3>Image Uploads</h3>
+					<p>(Optional. You can upload up to 3 images.)</p>
+					<div class="form-group">
+						<input type="file" name="inputImage" size="20"/>
+						<input name="uploadImage" type="submit" value="Upload"/>
+					</div>
+					<ul>
+						<cfloop list="#imageList#" delimiters=";" index="listItem">
+							<li>#listItem#</li>
+						</cfloop>
+					</ul>
+					<div class="text-center">
+						<input class="btn btn-success" type="submit" name="btnSubmit" value="Submit"/>
+					</div>
+				</cfif>
+			</cfoutput>
+		</form>
+	</div>
+  <div><cfinclude template="footer.cfm"></div>
 </body>
 </html>

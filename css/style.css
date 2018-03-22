@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+    font-family: Lato, sans-serif !important;
+}
+
 /* General Styling */
 .container {
 	padding: 40px;
@@ -98,11 +102,19 @@
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-    	opacity:0.8;
+    opacity:0.8;
+ }
+
+ .footer .affix {
+     bottom: 50px;
  }
 
  .footer div a img {
    height: 30px;
+ }
+
+ #disclaimer {
+     color: #000;
  }
 
  /* .btn-default {
@@ -131,14 +143,25 @@
     margin-top: 15px;
     color: #555;
 }
-body {
-    font-family: Lato, sans-serif !important;
+
+#form1 {
+    margin-top: 20px;
+    min-height: 1000px;
 }
+
 .header {
     overflow: hidden;
     background-color: #000!important;
     padding: 0px 10px;
     height:100px !important;
     width: 100%;
-  }
-  
+}
+
+#pageBottom {
+    background-color: #0047ab;
+    color: #fff;
+}
+
+#pageBottom .container {
+    padding: 10px 40px 40px 40px;
+}

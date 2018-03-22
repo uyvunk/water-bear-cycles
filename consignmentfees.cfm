@@ -1,5 +1,5 @@
-<div class="container">
-<h3>Consignment Fee</h3><br>
+<div>
+<h2>Consignment Fee</h2><br>
 <h4><b>1. WaterBear Cycles Trading Fees for Consigning Products</b></h4>
  <table class="table table-bordered">
     <thead>

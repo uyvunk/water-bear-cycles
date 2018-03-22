@@ -42,10 +42,6 @@
   <div id="consignmentfees" class="container">
     <cfinclude  template="consignmentfees.cfm">
   </div>
-  
-  <div class="container text-center">
-  <cfinclude  template="disclaimer.cfm">
-  </div> 
 
   <div><cfinclude template="footer.cfm"></div>
   <script>
