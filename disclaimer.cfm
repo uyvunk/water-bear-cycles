@@ -1,6 +1,6 @@
-<div class="container">
+<div>
     <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Disclaimer</button>
+  <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Disclaimer</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">

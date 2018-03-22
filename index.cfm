@@ -39,11 +39,6 @@
   <div id="consignmentfees" class="container">
     <cfinclude  template="consignmentfees.cfm">
   </div>
-  
-  <div class="container text-center">
-  <p>Copyright &copy; 2018 WaterBear Cycles Trading</p>
-  <cfinclude  template="disclaimer.cfm">
-  </div>
 
   <div><cfinclude template="footer.cfm"></div>
   <script>

@@ -171,29 +171,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-	<nav id="navBar" class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="./#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="./#myPage">HOME</a></li>
-					<li><a href="./#howitworks">HOW IT WORKS</a></li>
-					<li><a href="./#about">ABOUT</a></li>
-					<li><a href="./#contact">CONTACT US</a></li>
-					<li><a href="./#shipping">BICYCLE PACKING &amp; SHIPPING SERVICES</a></li>
-					<li><a href="./#consignmentfees">COSIGNMENT FEE</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
+	<div><cfinclude template="topnav.cfm"></div>
 	<div class="container">
 		<form name="form1" id="form1" action="sales.cfm" method="post" enctype="multipart/form-data">
 			<input type="hidden" name="imageList" value="<cfoutput>#imageList#</cfoutput>">
@@ -281,6 +260,12 @@
 			</cfoutput>
 		</form>
 	</div>
+	<hr>
+	<div class="container text-center">
+  <p>Copyright &copy; 2018 WaterBear Cycles Trading</p>
+  <cfinclude  template="disclaimer.cfm">
+  </div>
+
   <div><cfinclude template="footer.cfm"></div>
 </body>
 </html>
