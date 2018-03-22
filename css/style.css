@@ -103,6 +103,10 @@ body {
    height: 30px;
  }
 
+ #disclaimer {
+     color: #000;
+ }
+
  /* .btn-default {
     background-color: #1da1f2 !important;
     border-color: #1da1f2 !important;
