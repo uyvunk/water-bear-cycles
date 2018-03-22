@@ -12,7 +12,10 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="header">
+    <a href="#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
+  </div>
   <div><cfinclude template="topnav.cfm"></div>
   <div><cfinclude template="carousel.cfm"></div>
   <div class="container text-center">
@@ -41,9 +44,8 @@
   </div>
   
   <div class="container text-center">
-  <p>Copyright &copy; 2018 WaterBear Cycles Trading</p>
   <cfinclude  template="disclaimer.cfm">
-  </div>
+  </div> 
 
   <div><cfinclude template="footer.cfm"></div>
   <script>
