@@ -137,13 +137,11 @@
 				</cfif>
 			</table>
 			<cfloop list="#imageList#" delimiters=";" index="listItem">
-				<p>
-					<img src="cid:#listItem#" width="350" height="263" alt="" /><br />
-				</p>						
-			</cfloop>
-			<cfloop list="#imageList#" delimiters=";" index="listItem">
 				<cfset loc = bicycleImageDirectory & "\" & listItem>
- 				<cfmailparam file="#loc#" contentid="#listItem#" disposition="inline"/>		
+ 				<cfmailparam file="#loc#" contentID="#listItem#" disposition="inline">
+				 <p>
+					<img src="cid:#listItem#" width="350" height="263" alt="" /><br />
+				</p>
 			</cfloop>	
 		</cfmail>
 		<cfset success = 1>
