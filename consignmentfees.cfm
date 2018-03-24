@@ -5,8 +5,8 @@
     <thead>
       <tr>
         <th>Bicycles & Bicycle Components</th>
-        <th>Price</th>
-        <th>Minus Listing, eBay and PayPal Fees</th>
+        <th>Selling Price</th>
+        <th>Fees (*)</th>
       </tr>
     </thead>
     <tbody>
@@ -73,6 +73,7 @@
       </tr>
     </tbody>
   </table>
+  <p><b>(*): Minus Listing, eBay and PayPal Fees</b></p>
   <p><b>Note:</b> Additional cleaning and repair fees pre sale may also be charged.</p>
   <h4><b>2. Flat rate listing fee to create the listings</b></h4>
   <ul>
@@ -82,11 +83,10 @@
 </ul>
 <h4><b>3. eBay and PayPal Fees</b></h4>
 <p>A small percentage for eBay final value fee and PayPal fee also come out of the total the item sold for. This percentage is based on $ amount the item sold for. eBay and PayPal Fees can be viewed on the eBay and PayPal Websites (Some items may sell out side of eBay or be picked up locally. In these cases eBay and PayPal fees may not be charged</p>
-<p><b>Please keep in mind that WaterBear Cycles Trading fees include:<br>
-Please keep in mind that WaterBear Cycles Trading fees include: 
+<p><b>Please keep in mind that WaterBear Cycles Trading fees include:<br></b> 
 Estimating and Researching the Value of the item(s) Photographing the item(s), Typing up the listing, Listing the item(s) online, Tracking the auctions during the time the item(s) are listed, Answering emails and phone calls to potential buyer, Packing the item(s) for shipping, Using shipping materials, Driving the item(s) to the shipping location and Following up with buyers and leaving online Feedback once the transaction is completed. <br>
-Item(s) pick up charges may apply if pick up is requested by consignor.<br><br>
-WaterBear Cycles Trading<br>
+Item(s) pick up charges may apply if pick up is requested by consignor.</p><br>
+<p><b>WaterBear Cycles Trading<br>
 Bicycles & Bicycle Component Consignment Service<br>
 <a href="http://www.waterbearcycles.com/">www.waterbearcycles.com</a>
 </b></p>

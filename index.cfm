@@ -20,7 +20,7 @@
   <div><cfinclude template="carousel.cfm"></div>
   <div class="container text-center">
       <h1>Cash for Bicycles &amp; Bicycle Components</h1>
-      <p>Please click on Get Cash button below or Contact us.</p>
+      <p>Please click on <a href="sales.cfm"> Get Cash</a>, <a href="sales.cfm?type=1">Consignment</a> or <a href="#contact">Contact us.</a></p>
   </div>
 
   <div id="howitworks" class="container"> 
