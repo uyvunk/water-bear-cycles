@@ -16,7 +16,7 @@
         <td> -$165.00</td>
       </tr>
       <tr>
-        <td>from $1,000 to $2,000.00</td>
+        <td>from $1,000.01 to $2,000.00</td>
         <td>-$195.00</td>
       </tr>
       <tr>
@@ -32,7 +32,7 @@
         <td> - $400.00</td>
       </tr>
       <tr>
-        <td>$5,000.00</td>
+        <td>over $5,000</td>
         <td>-Flat Rate 9% of selling price</td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@
         <td> -$150.00</td>
       </tr>
       <tr>
-        <td>$1,500</td>
+        <td>over $1,500</td>
         <td>-Flat Rate 10% of selling price</td>
       </tr>
       <tr>
