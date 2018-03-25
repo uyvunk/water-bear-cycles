@@ -161,7 +161,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>Sell you used bicycle | WaterBearCycles Trading</title>
+  <cfif type eq 0>
+    <title>Cash for Bicycles | WaterBear Cycles Trading</title>
+  <cfelse>
+    <title>Bicycle Consignments | WaterBear Cycles Trading</title>
+  </cfif>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">

@@ -10,30 +10,30 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/carousel/carousel1.png" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel1.png" alt="Sell your used bicycle">
+      <div class="carousel-caption">
+        <h3>Sell your used bicycle</h3>
+      </div> 
+    </div>
+
+    <div class="item">
+      <img src="images/carousel/carousel2.png" alt="Trade your used bicycle">
       <div class="carousel-caption">
         <h3>Trade your used bicycle</h3>
       </div> 
     </div>
 
     <div class="item">
-      <img src="images/carousel/carousel2.jpg" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel3.png" alt="Sell used bicycles components">
       <div class="carousel-caption">
-        <h3>Trade your used bicycle</h3>
+        <h3>Sell used bicycles components</h3>
       </div> 
     </div>
 
     <div class="item">
-      <img src="images/carousel/carousel3.png" alt="Trade your used bicycle">
+      <img src="images/carousel/carousel4.jpg" alt="Cash for bikes">
       <div class="carousel-caption">
-        <h3>Trade your used bicycle</h3>
-      </div> 
-    </div>
-
-    <div class="item">
-      <img src="images/carousel/carousel4.jpg" alt="Trade your used bicycle">
-      <div class="carousel-caption">
-        <h3>Trade your used bicycle</h3>
+        <h3>Cash for bikes</h3>
       </div> 
     </div>
   </div>
