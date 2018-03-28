@@ -175,7 +175,7 @@
 </head>
 <body>
 	<div class="header">
-		<a href="#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
+		<a href="./#myPage"><img id="brandLogo" src="images/logo.png" alt="Water Bear Cycles Trading"></a>
 	</div>
 	<nav id="navBar" class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="100">
 		<div class="container-fluid">
@@ -269,6 +269,11 @@
 					</div>
 					<h3>Image Uploads</h3>
 					<p>(Optional. You can upload up to 3 images.)</p>
+					<ol>
+						<li>Click on "Browse" to select an image</li>
+						<li>Click on "Upload" to upload the image to our server</li>
+						<li>Once image is finished uploading click "Submit" to upload form</li>
+					</ol>
 					<div class="form-group">
 						<input type="file" name="inputImage" size="20"/>
 						<input name="uploadImage" type="submit" value="Upload"/>
